@@ -1,0 +1,4 @@
+const KEY='typing_the_book.audio_prefs';let prefs={enabled:true,volume:.3},buffer=null,ctx=null;try{prefs={...prefs,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{};const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(prefs))}catch{}};
+export async function loadSound(src){try{ctx??=new (window.AudioContext||window.webkitAudioContext)();const r=await fetch(src);buffer=await ctx.decodeAudioData(await r.arrayBuffer());return true}catch{return false}}
+export function playClick(){if(!prefs.enabled||!buffer)return;try{ctx.resume();const s=ctx.createBufferSource(),g=ctx.createGain();s.buffer=buffer;g.gain.value=prefs.volume;s.connect(g).connect(ctx.destination);s.start()}catch{}}
+export const getPrefs=()=>({...prefs});export function setEnabled(x){prefs.enabled=Boolean(x);save()}export function setVolume(x){prefs.volume=Math.max(0,Math.min(1,Number(x)));save()}export const isReady=()=>Boolean(buffer&&prefs.enabled);
