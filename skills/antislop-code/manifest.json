@@ -1,0 +1,18 @@
+{
+  "name": "antislop-code",
+  "description": "Code comment hygiene for AI coding agents: remove generic AI-slop comments, keep the valuable ones, never touch the code.",
+  "keywords": ["comment", "code comment", "hygiene", "slop comments", "comments"],
+  "aliases": ["antislop code", "code comments skill"],
+  "capabilities": ["code comment hygiene", "slop comment removal", "clean up code comments"],
+  "intents": {
+    "clean_comments": ["clean up code comments", "remove slop comments", "fix the comments", "comment hygiene"]
+  },
+  "commands": [
+    {
+      "name": "antislop-code",
+      "syntax": "antislop-code",
+      "description": "Clean AI-slop comments from code; keep valuable ones; never touch the code.",
+      "keywords": ["comment", "comments", "hygiene"]
+    }
+  ]
+}

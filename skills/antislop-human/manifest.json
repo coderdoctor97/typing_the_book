@@ -1,0 +1,18 @@
+{
+  "name": "antislop-human",
+  "description": "Human and accessibility skill for antislop. Contrast, keyboard, focus, and states for real people. Includes the contrast checker.",
+  "keywords": ["accessibility", "a11y", "contrast", "keyboard", "focus", "screen reader", "states", "accessible"],
+  "aliases": ["antislop human", "accessibility skill"],
+  "capabilities": ["accessibility checks", "check accessibility", "contrast checking", "keyboard navigation", "focus states", "screen reader support"],
+  "intents": {
+    "check_a11y": ["check accessibility", "improve contrast", "make it accessible", "keyboard support", "focus states", "accessibility audit"]
+  },
+  "commands": [
+    {
+      "name": "antislop-human",
+      "syntax": "antislop-human",
+      "description": "Deep-dive the human/accessibility concern: contrast, keyboard, focus, states.",
+      "keywords": ["accessibility", "a11y", "contrast", "keyboard", "focus"]
+    }
+  ]
+}

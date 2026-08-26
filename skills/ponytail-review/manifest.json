@@ -1,0 +1,20 @@
+{
+  "name": "ponytail-review",
+  "description": "Code review focused exclusively on over-engineering: what to delete, reinvented standard library, unneeded dependencies, speculative abstractions, dead flexibility. One line per finding: location, what to cut, what replaces it.",
+  "keywords": ["over-engineering", "review", "delete", "complexity", "simplify", "yagni", "dead code", "unnecessary"],
+  "aliases": ["/ponytail-review", "ponytail review"],
+  "capabilities": ["over-engineering review", "code review", "complexity reduction", "dead code analysis", "dependency review"],
+  "intents": {
+    "review_overengineering": ["review for over-engineering", "review this diff", "review this code", "review the code", "is this over-engineered"],
+    "what_to_delete": ["what can we delete", "what to cut", "find dead code"],
+    "simplify_review": ["simplify review", "review for complexity"]
+  },
+  "commands": [
+    {
+      "name": "ponytail-review",
+      "syntax": "/ponytail-review",
+      "description": "Review code (diff or file) for unnecessary complexity; one line per finding.",
+      "keywords": ["review", "over-engineer", "delete", "complexity", "diff"]
+    }
+  ]
+}

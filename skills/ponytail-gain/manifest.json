@@ -1,0 +1,18 @@
+{
+  "name": "ponytail-gain",
+  "description": "Show ponytail's measured impact as a compact scoreboard: less code, less cost, more speed, from the published benchmark medians. One-shot display, not a per-repo number.",
+  "keywords": ["gain", "scoreboard", "impact", "benchmark", "savings", "lines of code", "cost", "speed", "metrics"],
+  "aliases": ["/ponytail-gain", "ponytail gain", "ponytail scoreboard"],
+  "capabilities": ["impact scoreboard", "benchmark reporting", "savings metrics"],
+  "intents": {
+    "show_impact": ["what does ponytail save", "show ponytail impact", "ponytail gain", "ponytail scoreboard", "show the numbers"]
+  },
+  "commands": [
+    {
+      "name": "ponytail-gain",
+      "syntax": "/ponytail-gain",
+      "description": "Display ponytail's measured benchmark impact as a scoreboard.",
+      "keywords": ["gain", "scoreboard", "impact", "benchmark", "savings"]
+    }
+  ]
+}

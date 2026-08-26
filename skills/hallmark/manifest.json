@@ -1,0 +1,22 @@
+{
+  "name": "hallmark",
+  "description": "Anti-AI-slop design skill for greenfield pages, audits, redesigns, and design extraction from URLs or screenshots. Insists on structural variety — pages should feel like different sites, not colour-swaps of the same template.",
+  "version": "1.1.0",
+  "keywords": ["design", "anti-ai-slop", "anti slop", "slop", "landing page", "audit", "redesign", "study", "ui", "greenfield", "aesthetic", "structural variety", "template"],
+  "aliases": ["hallmark", "/hallmark"],
+  "capabilities": ["greenfield page design", "design audit", "design redesign", "landing page redesign", "design dna extraction", "design study", "anti-slop enforcement"],
+  "intents": {
+    "build_new": ["build a new app or landing page", "design something new", "greenfield design"],
+    "redesign": ["redesign something", "redesign a landing page", "redesign a page", "redesign this"],
+    "audit_design": ["audit a design", "score a design", "anti-pattern list"],
+    "study": ["study a design", "extract design dna", "study this screenshot", "study this url"]
+  },
+  "commands": [
+    {
+      "name": "hallmark",
+      "syntax": "hallmark [audit|redesign|study] [target]",
+      "description": "Build, audit, redesign, or study a design with Hallmark's anti-AI-slop rules.",
+      "keywords": ["audit", "redesign", "study", "design", "landing page", "slop"]
+    }
+  ]
+}
