@@ -26,3 +26,16 @@ Ranked biggest cut first. Lists findings, applies nothing.
 `net: -55 lines, -2 deps possible.`
 
 Leanest parts, no action: vanilla SPA (no framework), `esc()`/DOMPurify/`valid()` trust-boundary handling, the one-file smoke test, `generate-click.js`. Already in ponytail shape.
+
+## Applied
+
+All findings applied (commit on `arena/01a03ba8-typing-the-book`). Actual result: `46 insertions(+), 864 deletions(-)`; the source edits are pure deletions, the bulk of the line delta is the lockfile losing 63 packages (jsdom + jszip and their transitive deps). `npm test` (10 tests) and `npm run build` both pass.
+
+- session.js: dropped the 9 unused exports (`canStart`…`canEnd`, `isComplete`, `end`, `reset`, `handlePasteAttempt`), the dead state (`paragraphs`, `sessionMistakes`, `lastEvent`), and handleKey's `recordError` option (also removed the now-unused `splitParagraphs` from selection.js).
+- parsers: parse* now return `{html, text}` only — no `wordCount`/`charCount`/`paragraphCount`/`messages`. Dropped `parserFor` and the dead `textToHtml` re-export; parseMd's speculative `typeof document` shim gone.
+- errors.js/storage.js: removed `exportData`/`importData`/`exportHistory`/`importHistory`, `getErrorWords`, and the never-read `context` field (old localStorage data still validates).
+- Word regex: one shared `WORD_RE` exported from selection.js, imported by main.js — 5 copies → 1.
+- audio.js: `isReady` gone (playClick already guards).
+- stats.js: `sessionSummary`'s `elapsed` fallback and the constant `progress` gone.
+- package.json: `generate-fixtures` script (pointed at a nonexistent file), `jsdom`, `jszip` removed.
+- Bonus bug fix (routed out of scope in the review, but it was the only broken thing): the "Clear history" button now works — `action('clear')` calls `clearAll()` behind a confirm.
