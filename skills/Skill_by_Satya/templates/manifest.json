@@ -1,0 +1,23 @@
+{
+  "_help": "Skill manifest (source of truth). Copy to skills/<skill-name>/manifest.json and fill in. The 'name' MUST match the folder name. Only register commands that actually exist. 'intents' maps an intent id to trigger phrases; matching is deterministic (every token of a phrase must appear in the request).",
+  "name": "my-skill",
+  "description": "One or two sentences: what this skill does and when to use it. Longer descriptions help the description-matching signal.",
+  "keywords": ["my-skill", "alias words", "domain terms", "trigger words", "related phrases"],
+  "aliases": ["my-skill", "/my-skill"],
+  "capabilities": ["what it can do", "capability phrase", "another capability"],
+  "intents": {
+    "my_intent_id": ["trigger phrase one", "trigger phrase two"]
+  },
+  "commands": [
+    {
+      "name": "my_command",
+      "syntax": "my_command [args]",
+      "description": "What this command does.",
+      "keywords": ["command", "trigger", "words"]
+    }
+  ],
+  "_bootstrap": {
+    "generated": false,
+    "needs_review": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "_help": "Generated index — do NOT hand-edit. Rebuild with: python3 skill.py discover (or sync). Source of truth is each skill's manifest.json.",
+  "schema_version": 1,
+  "skills_dir": "skills",
+  "note": "Generated index. Source of truth: each skill's manifest.json.",
+  "skill_count": 0,
+  "skills": []
+}

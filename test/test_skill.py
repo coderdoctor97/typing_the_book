@@ -129,7 +129,7 @@ ok(r["status"] == "no_match", "new skill: after removal it must be unroutable")
 # --- 8. Registry + validation ------------------------------------------------
 report = skill.validate_all(root=REPO)
 ok(report["ok"] is True, f"validate: expected OK, got {report['errors']}")
-ok(report["skills_checked"] >= 19, "validate: expected 19+ skills checked")
+ok(report["skills_checked"] >= 20, "validate: expected 20+ skills checked")
 
 with tempfile.TemporaryDirectory() as td:
     tmp_root = Path(td)

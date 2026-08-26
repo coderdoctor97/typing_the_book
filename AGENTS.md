@@ -94,3 +94,14 @@ Treat the skill registry as part of the skill installation/update process, not a
 ```sh
 python3 test/test_skill.py    # router tests (direct/alias/capability/ambiguous/unknown/invalid/new-skill)
 ```
+
+---
+
+# Reusable meta-skill: Skill_by_Satya
+
+`skills/Skill_by_Satya/` is a portable meta-skill for establishing this exact
+skill-routing environment in OTHER agent repositories (bootstrap both empty
+and skill-rich repos, idempotent sync, agent.md maintenance contract, and
+this router generalized with `bootstrap`/`sync` commands). It is itself
+routable here: `python3 skill.py route "bootstrap the skill router"`.
+Postmortem + lessons: `skills/Skill_by_Satya/documentions.md`.

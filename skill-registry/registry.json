@@ -2,8 +2,21 @@
   "schema_version": 1,
   "skills_dir": "skills",
   "note": "Generated index. Source of truth: each skill's manifest.json.",
-  "skill_count": 19,
+  "skill_count": 20,
   "skills": [
+    {
+      "name": "Skill_by_Satya",
+      "description": "Reusable meta-skill: establish, bootstrap, maintain, and evolve an intelligent skill-routing environment (skill discovery + routing + command resolution) in any agent repository. Works whether the target repo has zero skills or fifty.",
+      "commands": [
+        "bootstrap",
+        "sync",
+        "discover",
+        "list",
+        "route",
+        "validate"
+      ],
+      "manifest": "skills/Skill_by_Satya/manifest.json"
+    },
     {
       "name": "antislop",
       "description": "Anti Slop: rules for AI coding agents. The core filter to stop generic AI slop. Follow these rules whenever generating or building UI for a website, web app, or any interface.",
