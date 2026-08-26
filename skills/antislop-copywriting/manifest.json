@@ -1,0 +1,18 @@
+{
+  "name": "antislop-copywriting",
+  "description": "Copy and text skill for antislop. Use when writing or editing prose: headlines, tone, CTAs, and anti-AI-writing patterns. Load with the core.",
+  "keywords": ["copy", "prose", "headline", "tone", "cta", "writing", "text", "microcopy"],
+  "aliases": ["antislop copywriting", "copy skill"],
+  "capabilities": ["copywriting", "tone control", "cta writing", "anti-ai-writing patterns"],
+  "intents": {
+    "write_copy": ["write better copy", "improve the copy", "write a headline", "fix the tone", "better cta", "improve this text"]
+  },
+  "commands": [
+    {
+      "name": "antislop-copywriting",
+      "syntax": "antislop-copywriting",
+      "description": "Apply anti-AI-writing rules to headlines, tone, CTAs, and prose.",
+      "keywords": ["copy", "headline", "tone", "cta", "writing"]
+    }
+  ]
+}

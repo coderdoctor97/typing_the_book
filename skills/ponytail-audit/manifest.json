@@ -1,0 +1,19 @@
+{
+  "name": "ponytail-audit",
+  "description": "Whole-repo audit for over-engineering, like ponytail-review but repo-wide: a ranked list of what to delete, simplify, or replace with stdlib/native equivalents. One-shot report, applies nothing.",
+  "keywords": ["audit", "bloat", "repo-wide", "delete", "over-engineering", "complexity", "simplify", "whole repo"],
+  "aliases": ["/ponytail-audit", "ponytail audit"],
+  "capabilities": ["whole-repo over-engineering audit", "bloat detection", "codebase simplification"],
+  "intents": {
+    "audit_codebase": ["audit this codebase", "audit the repo", "audit for over-engineering"],
+    "find_bloat": ["find bloat", "what can I delete from this repo", "what is unnecessary"]
+  },
+  "commands": [
+    {
+      "name": "ponytail-audit",
+      "syntax": "/ponytail-audit",
+      "description": "Audit the whole repository for over-engineering; ranked findings, biggest cut first.",
+      "keywords": ["audit", "bloat", "repo", "codebase", "delete"]
+    }
+  ]
+}

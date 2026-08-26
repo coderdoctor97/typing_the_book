@@ -1,0 +1,18 @@
+{
+  "name": "ponytail-help",
+  "description": "Quick-reference card for all ponytail modes, skills, and commands. One-shot display, does not change mode.",
+  "keywords": ["help", "reference", "commands", "how do i use", "modes", "guide", "card"],
+  "aliases": ["/ponytail-help", "ponytail help", "ponytail commands"],
+  "capabilities": ["quick reference", "command documentation", "usage guide"],
+  "intents": {
+    "show_help": ["ponytail help", "how do i use ponytail", "what ponytail commands", "ponytail reference"]
+  },
+  "commands": [
+    {
+      "name": "ponytail-help",
+      "syntax": "/ponytail-help",
+      "description": "Display the ponytail quick-reference card (levels, skills, commands).",
+      "keywords": ["help", "reference", "commands", "guide"]
+    }
+  ]
+}

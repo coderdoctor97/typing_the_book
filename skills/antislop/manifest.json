@@ -1,0 +1,19 @@
+{
+  "name": "antislop",
+  "description": "Anti Slop: rules for AI coding agents. The core filter to stop generic AI slop. Follow these rules whenever generating or building UI for a website, web app, or any interface.",
+  "keywords": ["slop", "generic", "ai slop", "template", "default", "filter", "crafted", "interface", "rules"],
+  "aliases": ["antislop", "anti-slop"],
+  "capabilities": ["generic ai pattern detection", "ui quality enforcement", "anti-slop filtering"],
+  "intents": {
+    "stop_slop": ["stop generic ai slop", "make this not look ai generated", "apply anti-slop rules", "anti slop"],
+    "enforce_craft": ["crafted by a designer", "avoid ai defaults"]
+  },
+  "commands": [
+    {
+      "name": "antislop",
+      "syntax": "antislop",
+      "description": "Load the core anti-slop filter for any UI work.",
+      "keywords": ["slop", "generic", "rules", "filter"]
+    }
+  ]
+}

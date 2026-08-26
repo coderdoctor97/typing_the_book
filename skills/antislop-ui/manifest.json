@@ -1,0 +1,18 @@
+{
+  "name": "antislop-ui",
+  "description": "UI and visual skill for antislop. Use when building or editing any interface: color, layout, components, motion. Load with the core.",
+  "keywords": ["ui", "visual", "color", "components", "motion", "interface", "design", "layout"],
+  "aliases": ["antislop ui", "ui skill"],
+  "capabilities": ["ui polish", "visual design", "visual hierarchy", "component design", "motion design", "color design"],
+  "intents": {
+    "improve_ui": ["improve the ui", "polish the interface", "fix the visual hierarchy", "improve the visual hierarchy", "make the ui look better", "improve the design"]
+  },
+  "commands": [
+    {
+      "name": "antislop-ui",
+      "syntax": "antislop-ui",
+      "description": "Apply anti-slop UI/visual rules: color, layout, components, motion.",
+      "keywords": ["ui", "visual", "interface", "color", "components"]
+    }
+  ]
+}

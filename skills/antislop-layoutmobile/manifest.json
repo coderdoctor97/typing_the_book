@@ -1,0 +1,18 @@
+{
+  "name": "antislop-layoutmobile",
+  "description": "Mobile layout skill for antislop. Use for layouts that reflow on small screens: grids, overflow, tap targets. Load with the core.",
+  "keywords": ["mobile", "layout", "responsive", "grid", "overflow", "tap target", "small screen", "reflow"],
+  "aliases": ["antislop mobile", "mobile layout skill"],
+  "capabilities": ["mobile layout", "responsive design", "touch targets", "overflow handling"],
+  "intents": {
+    "fix_mobile": ["fix mobile layout", "make it responsive", "small screens", "tap targets", "mobile overflow", "reflow on mobile"]
+  },
+  "commands": [
+    {
+      "name": "antislop-layoutmobile",
+      "syntax": "antislop-layoutmobile",
+      "description": "Fix layouts that reflow on small screens: grids, overflow, tap targets.",
+      "keywords": ["mobile", "responsive", "layout", "tap target"]
+    }
+  ]
+}

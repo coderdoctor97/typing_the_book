@@ -1,0 +1,18 @@
+{
+  "name": "supanova-redesign-engine",
+  "description": "Upgrades existing landing pages to premium quality. Audits current design for generic AI patterns and applies Supanova's high-end standards. Works with any HTML/CSS landing page — Tailwind, vanilla CSS, or inline styles.",
+  "keywords": ["redesign", "upgrade", "audit", "existing", "landing page", "premium", "improve"],
+  "aliases": ["supanova redesign", "redesign engine"],
+  "capabilities": ["landing page redesign", "generic pattern audit", "design upgrade"],
+  "intents": {
+    "redesign_landing_page": ["redesign a landing page", "upgrade an existing landing page", "redesign my page", "make my landing page premium"]
+  },
+  "commands": [
+    {
+      "name": "supanova-redesign-engine",
+      "syntax": "supanova-redesign-engine",
+      "description": "Upgrade an existing landing page to premium quality; audit and apply high-end standards.",
+      "keywords": ["redesign", "upgrade", "landing page", "existing"]
+    }
+  ]
+}

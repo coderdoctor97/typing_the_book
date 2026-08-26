@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "skills_dir": "skills",
+  "note": "Generated index. Source of truth: each skill's manifest.json.",
+  "skill_count": 20,
+  "skills": [
+    {
+      "name": "Skill_by_Satya",
+      "description": "Reusable meta-skill: establish, bootstrap, maintain, and evolve an intelligent skill-routing environment (skill discovery + routing + command resolution) in any agent repository. Works whether the target repo has zero skills or fifty.",
+      "commands": [
+        "bootstrap",
+        "sync",
+        "discover",
+        "list",
+        "route",
+        "validate"
+      ],
+      "manifest": "skills/Skill_by_Satya/manifest.json"
+    },
+    {
+      "name": "antislop",
+      "description": "Anti Slop: rules for AI coding agents. The core filter to stop generic AI slop. Follow these rules whenever generating or building UI for a website, web app, or any interface.",
+      "commands": [
+        "antislop"
+      ],
+      "manifest": "skills/antislop/manifest.json"
+    },
+    {
+      "name": "antislop-code",
+      "description": "Code comment hygiene for AI coding agents: remove generic AI-slop comments, keep the valuable ones, never touch the code.",
+      "commands": [
+        "antislop-code"
+      ],
+      "manifest": "skills/antislop-code/manifest.json"
+    },
+    {
+      "name": "antislop-copywriting",
+      "description": "Copy and text skill for antislop. Use when writing or editing prose: headlines, tone, CTAs, and anti-AI-writing patterns. Load with the core.",
+      "commands": [
+        "antislop-copywriting"
+      ],
+      "manifest": "skills/antislop-copywriting/manifest.json"
+    },
+    {
+      "name": "antislop-human",
+      "description": "Human and accessibility skill for antislop. Contrast, keyboard, focus, and states for real people. Includes the contrast checker.",
+      "commands": [
+        "antislop-human"
+      ],
+      "manifest": "skills/antislop-human/manifest.json"
+    },
+    {
+      "name": "antislop-layoutmobile",
+      "description": "Mobile layout skill for antislop. Use for layouts that reflow on small screens: grids, overflow, tap targets. Load with the core.",
+      "commands": [
+        "antislop-layoutmobile"
+      ],
+      "manifest": "skills/antislop-layoutmobile/manifest.json"
+    },
+    {
+      "name": "antislop-ui",
+      "description": "UI and visual skill for antislop. Use when building or editing any interface: color, layout, components, motion. Load with the core.",
+      "commands": [
+        "antislop-ui"
+      ],
+      "manifest": "skills/antislop-ui/manifest.json"
+    },
+    {
+      "name": "css-protips",
+      "description": "A collection of CSS protips to take CSS skills pro: CSS resets, box-sizing inheritance, :not(), :is(), aspect-ratio, the lobotomized owl selector, comma-separated lists, SVG icons, vertical centering, and more.",
+      "commands": [
+        "css-protips"
+      ],
+      "manifest": "skills/css-protips/manifest.json"
+    },
+    {
+      "name": "hallmark",
+      "description": "Anti-AI-slop design skill for greenfield pages, audits, redesigns, and design extraction from URLs or screenshots. Insists on structural variety \u2014 pages should feel like different sites, not colour-swaps of the same template.",
+      "commands": [
+        "hallmark"
+      ],
+      "manifest": "skills/hallmark/manifest.json"
+    },
+    {
+      "name": "impeccable",
+      "description": "Design guidance for AI coding agents: 22 commands for frontend design, audit, critique, and polish, with live browser iteration and deterministic anti-pattern detection. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states.",
+      "commands": [
+        "shape",
+        "init",
+        "document",
+        "extract",
+        "critique",
+        "audit",
+        "polish",
+        "bolder",
+        "quieter",
+        "distill",
+        "harden",
+        "onboard",
+        "animate",
+        "colorize",
+        "typeset",
+        "layout",
+        "delight",
+        "overdrive",
+        "clarify",
+        "adapt",
+        "optimize",
+        "live"
+      ],
+      "manifest": "skills/impeccable/manifest.json"
+    },
+    {
+      "name": "ponytail",
+      "description": "Lazy senior dev mode: forces the laziest solution that actually works \u2014 YAGNI, stdlib before custom code, native platform features before dependencies, one line before fifty. Levels: lite, full (default), ultra.",
+      "commands": [
+        "ponytail"
+      ],
+      "manifest": "skills/ponytail/manifest.json"
+    },
+    {
+      "name": "ponytail-audit",
+      "description": "Whole-repo audit for over-engineering, like ponytail-review but repo-wide: a ranked list of what to delete, simplify, or replace with stdlib/native equivalents. One-shot report, applies nothing.",
+      "commands": [
+        "ponytail-audit"
+      ],
+      "manifest": "skills/ponytail-audit/manifest.json"
+    },
+    {
+      "name": "ponytail-debt",
+      "description": "Harvest every `ponytail:` comment in the codebase into a debt ledger so deliberate shortcuts and deferrals get tracked instead of rotting into 'later means never'. One-shot report, changes nothing.",
+      "commands": [
+        "ponytail-debt"
+      ],
+      "manifest": "skills/ponytail-debt/manifest.json"
+    },
+    {
+      "name": "ponytail-gain",
+      "description": "Show ponytail's measured impact as a compact scoreboard: less code, less cost, more speed, from the published benchmark medians. One-shot display, not a per-repo number.",
+      "commands": [
+        "ponytail-gain"
+      ],
+      "manifest": "skills/ponytail-gain/manifest.json"
+    },
+    {
+      "name": "ponytail-help",
+      "description": "Quick-reference card for all ponytail modes, skills, and commands. One-shot display, does not change mode.",
+      "commands": [
+        "ponytail-help"
+      ],
+      "manifest": "skills/ponytail-help/manifest.json"
+    },
+    {
+      "name": "ponytail-review",
+      "description": "Code review focused exclusively on over-engineering: what to delete, reinvented standard library, unneeded dependencies, speculative abstractions, dead flexibility. One line per finding: location, what to cut, what replaces it.",
+      "commands": [
+        "ponytail-review"
+      ],
+      "manifest": "skills/ponytail-review/manifest.json"
+    },
+    {
+      "name": "supanova-design-engine",
+      "description": "Supanova Landing Page Design Engine. Generates premium, conversion-optimized landing pages using pure HTML + Tailwind CSS (CDN). Overrides default LLM biases toward generic templates; enforces metric-based design rules, Korean typography standards, and hardware-accelerated motion.",
+      "commands": [
+        "supanova-design-engine"
+      ],
+      "manifest": "skills/supanova-design-engine/manifest.json"
+    },
+    {
+      "name": "supanova-full-output",
+      "description": "Overrides default LLM truncation behavior. Enforces complete HTML generation with zero placeholder patterns. Every landing page must be delivered as a complete, production-ready file. No shortcuts, no skeletons, no 'add more as needed' patterns.",
+      "commands": [
+        "supanova-full-output"
+      ],
+      "manifest": "skills/supanova-full-output/manifest.json"
+    },
+    {
+      "name": "supanova-premium-aesthetic",
+      "description": "Teaches AI to design landing pages that feel like $150k agency work: exact fonts, spacing, shadows, card structures, animations, and Korean typography standards. Blocks all common defaults that make AI designs look cheap or generic.",
+      "commands": [
+        "supanova-premium-aesthetic"
+      ],
+      "manifest": "skills/supanova-premium-aesthetic/manifest.json"
+    },
+    {
+      "name": "supanova-redesign-engine",
+      "description": "Upgrades existing landing pages to premium quality. Audits current design for generic AI patterns and applies Supanova's high-end standards. Works with any HTML/CSS landing page \u2014 Tailwind, vanilla CSS, or inline styles.",
+      "commands": [
+        "supanova-redesign-engine"
+      ],
+      "manifest": "skills/supanova-redesign-engine/manifest.json"
+    }
+  ]
+}

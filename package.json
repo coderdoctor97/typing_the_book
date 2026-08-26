@@ -1,1 +1,20 @@
-{"name":"typing-the-book","version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview --host 0.0.0.0","test":"node test/tests.js","generate-audio":"node generate-click.js","generate-fixtures":"node generate-fixtures.js"},"dependencies":{"dompurify":"^3.1.6","mammoth":"^1.8.0","marked":"^12.0.2"},"devDependencies":{"jsdom":"^24.1.3","jszip":"^3.10.1","vite":"^5.4.21"}}
+{
+  "name": "typing-the-book",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node test/tests.js",
+    "generate-audio": "node generate-click.js"
+  },
+  "dependencies": {
+    "dompurify": "^3.1.6",
+    "mammoth": "^1.8.0",
+    "marked": "^12.0.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.21"
+  }
+}

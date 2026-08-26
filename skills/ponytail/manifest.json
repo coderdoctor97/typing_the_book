@@ -1,0 +1,21 @@
+{
+  "name": "ponytail",
+  "description": "Lazy senior dev mode: forces the laziest solution that actually works — YAGNI, stdlib before custom code, native platform features before dependencies, one line before fifty. Levels: lite, full (default), ultra.",
+  "keywords": ["lazy", "yagni", "minimal", "simplest", "over-engineer", "overengineering", "bloat", "boilerplate", "one-liner", "simplify", "do less", "shortest path", "refactor"],
+  "aliases": ["ponytail", "/ponytail", "lazy mode", "be lazy", "lazy senior dev"],
+  "capabilities": ["code simplification", "yagni enforcement", "dependency reduction", "minimal solution design", "refactoring"],
+  "intents": {
+    "simplify_code": ["simplify code", "write minimal code", "make this simpler", "make it minimal"],
+    "avoid_overengineering": ["avoid over-engineering", "stop over-engineering", "don't overbuild", "yagni"],
+    "reduce_dependencies": ["remove unnecessary dependencies", "drop dependencies", "use stdlib"],
+    "shortest_path": ["shortest path", "do less", "lazy solution"]
+  },
+  "commands": [
+    {
+      "name": "ponytail",
+      "syntax": "/ponytail [lite|full|ultra]",
+      "description": "Activate lazy senior dev mode at the given intensity (default full).",
+      "keywords": ["lazy", "minimal", "simplest", "yagni", "simplify", "ultra", "lite"]
+    }
+  ]
+}

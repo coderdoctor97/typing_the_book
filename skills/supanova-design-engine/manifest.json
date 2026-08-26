@@ -1,0 +1,19 @@
+{
+  "name": "supanova-design-engine",
+  "description": "Supanova Landing Page Design Engine. Generates premium, conversion-optimized landing pages using pure HTML + Tailwind CSS (CDN). Overrides default LLM biases toward generic templates; enforces metric-based design rules, Korean typography standards, and hardware-accelerated motion.",
+  "keywords": ["landing page", "design", "html", "tailwind", "conversion", "premium", "korean", "typography", "generate"],
+  "aliases": ["supanova", "supanova design"],
+  "capabilities": ["landing page generation", "generate landing page", "conversion-optimized design", "standalone html output", "tailwind css", "korean typography"],
+  "intents": {
+    "generate_landing_page": ["generate a landing page", "build a landing page", "create a landing page", "landing page design"],
+    "conversion_design": ["conversion optimized", "make it convert", "premium landing page"]
+  },
+  "commands": [
+    {
+      "name": "supanova-design-engine",
+      "syntax": "supanova-design-engine",
+      "description": "Generate a premium, conversion-optimized landing page in standalone HTML + Tailwind.",
+      "keywords": ["landing page", "design", "generate", "html", "tailwind"]
+    }
+  ]
+}

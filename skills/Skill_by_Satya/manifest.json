@@ -1,0 +1,50 @@
+{
+  "name": "Skill_by_Satya",
+  "description": "Reusable meta-skill: establish, bootstrap, maintain, and evolve an intelligent skill-routing environment (skill discovery + routing + command resolution) in any agent repository. Works whether the target repo has zero skills or fifty.",
+  "keywords": ["skill router", "skill routing", "routing", "bootstrap", "registry", "meta-skill", "skill environment", "sync", "discovery"],
+  "aliases": ["Skill_by_Satya", "skill router", "routing meta-skill", "satya skill"],
+  "capabilities": ["bootstrap a skill routing environment", "establish a skill router", "synchronize the skill registry", "discover and route skills", "validate the routing environment"],
+  "intents": {
+    "set_up_router": ["set up a skill router", "set up the skill router", "bootstrap the skill router", "bootstrap the routing environment", "install the routing meta-skill", "establish the routing environment"],
+    "sync_registry": ["sync the skill registry", "synchronize the registry", "update the skill registry", "rebuild the registry"],
+    "router_help": ["how does the skill router work", "explain the routing architecture", "what skills are routable"]
+  },
+  "commands": [
+    {
+      "name": "bootstrap",
+      "syntax": "python3 skill.py bootstrap [--root DIR] [--force]",
+      "description": "Establish the routing environment: create skills/ and the registry, generate candidate manifests for skills that lack one, install skill.py, and append the agent.md maintenance contract. Idempotent and conservative.",
+      "keywords": ["bootstrap", "install", "setup", "establish", "initialize"]
+    },
+    {
+      "name": "sync",
+      "syntax": "python3 skill.py sync [--root DIR]",
+      "description": "Idempotent synchronization: rebuild the registry from manifests, validate everything, report orphan skills.",
+      "keywords": ["sync", "synchronize", "update", "refresh", "rebuild"]
+    },
+    {
+      "name": "discover",
+      "syntax": "python3 skill.py discover [--root DIR]",
+      "description": "Rebuild skill-registry/registry.json from skill manifests.",
+      "keywords": ["discover", "rebuild registry", "regenerate", "index"]
+    },
+    {
+      "name": "list",
+      "syntax": "python3 skill.py list [--root DIR]",
+      "description": "Print the skill index: every routable skill and its commands.",
+      "keywords": ["list", "show skills", "what skills", "index"]
+    },
+    {
+      "name": "route",
+      "syntax": "python3 skill.py route \"<request>\" [--root DIR]",
+      "description": "Route a user request to the best skill + command; print the structured result.",
+      "keywords": ["route", "which skill", "recommend", "match"]
+    },
+    {
+      "name": "validate",
+      "syntax": "python3 skill.py validate [--root DIR]",
+      "description": "Validate all manifests and the registry; exit 0/1.",
+      "keywords": ["validate", "check", "verify", "integrity", "doctor"]
+    }
+  ]
+}

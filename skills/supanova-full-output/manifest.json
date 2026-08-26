@@ -1,0 +1,18 @@
+{
+  "name": "supanova-full-output",
+  "description": "Overrides default LLM truncation behavior. Enforces complete HTML generation with zero placeholder patterns. Every landing page must be delivered as a complete, production-ready file. No shortcuts, no skeletons, no 'add more as needed' patterns.",
+  "keywords": ["placeholder", "skeleton", "truncation", "complete html", "full output", "production ready", "no shortcuts"],
+  "aliases": ["supanova full output", "full output"],
+  "capabilities": ["complete output enforcement", "placeholder elimination", "production-ready html"],
+  "intents": {
+    "complete_output": ["no placeholders", "complete the html", "don't truncate", "full output", "production ready file", "finish the page"]
+  },
+  "commands": [
+    {
+      "name": "supanova-full-output",
+      "syntax": "supanova-full-output",
+      "description": "Enforce complete, production-ready HTML output with zero placeholders.",
+      "keywords": ["placeholder", "complete", "output", "truncation", "finish"]
+    }
+  ]
+}

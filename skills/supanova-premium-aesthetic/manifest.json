@@ -1,0 +1,18 @@
+{
+  "name": "supanova-premium-aesthetic",
+  "description": "Teaches AI to design landing pages that feel like $150k agency work: exact fonts, spacing, shadows, card structures, animations, and Korean typography standards. Blocks all common defaults that make AI designs look cheap or generic.",
+  "keywords": ["premium", "aesthetic", "agency", "expensive", "fonts", "spacing", "shadows", "cards", "animation", "korean typography", "high-end"],
+  "aliases": ["supanova premium", "premium aesthetic"],
+  "capabilities": ["premium aesthetic", "premium landing page", "agency-quality design", "animation standards", "korean typography standards"],
+  "intents": {
+    "premium_design": ["make it look expensive", "premium design", "agency quality", "high-end look", "make it feel premium", "make my landing page premium"]
+  },
+  "commands": [
+    {
+      "name": "supanova-premium-aesthetic",
+      "syntax": "supanova-premium-aesthetic",
+      "description": "Apply $150k agency-level aesthetic standards: fonts, spacing, shadows, animation.",
+      "keywords": ["premium", "aesthetic", "agency", "expensive", "high-end"]
+    }
+  ]
+}
